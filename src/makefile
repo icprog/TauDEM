@@ -77,10 +77,10 @@ CONNECTDOWN = ConnectDown.o ConnectDownmn.o $(OBJFILES) $(SHAPEFILES)
 
 
 #The following are compiler flags common to all building rules
-CC = mpic++
+CC = mpicxx
 CFLAGS=-O2
-CFLAGS=-g -Wall
 CFLAGS=-g
+CFLAGS=-g -Wall
 LARGEFILEFLAG= -D_FILE_OFFSET_BITS=64
 #INCDIRS=-I/usr/lib/openmpi/include -I/usr/include/gdal
 INCDIRS=`gdal-config --cflags`
